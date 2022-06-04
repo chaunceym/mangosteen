@@ -1,7 +1,7 @@
 /*
  * @Author: mengxiangyu
  * @Date: 2022-05-22 17:37:04
- * @LastEditTime: 2022-06-04 11:15:59
+ * @LastEditTime: 2022-06-04 15:06:27
  * @LastEditors: your name
  * @Description:
  */
@@ -11,7 +11,6 @@ import { RouterView } from "vue-router";
 import s from "./Welcome.module.scss";
 import logo from "../assets/icons/logo.svg";
 
-console.log(logo);
 export const WelCome = defineComponent({
   setup: (props, context) => {
     return () => (
