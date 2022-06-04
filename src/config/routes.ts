@@ -1,7 +1,7 @@
 /*
  * @Author: mengxiangyu
  * @Date: 2022-05-22 17:23:31
- * @LastEditTime: 2022-05-22 17:23:32
+ * @LastEditTime: 2022-06-04 13:43:19
  * @LastEditors: your name
  * @Description:
  */
@@ -15,12 +15,12 @@ import { Third } from "../components/welcome/Third";
 import { Fourth } from "../components/welcome/Fourth";
 
 export const routes = [
-  { path: "/bar", component: Bar },
-  { path: "/", component: Foo },
+  { path: "/", redirect: "welcome" },
   {
     path: "/welcome",
     component: WelCome,
     children: [
+      { path: "", redirect: "/welcome/1" },
       { path: "1", component: First },
       { path: "2", component: Second },
       { path: "3", component: Third },

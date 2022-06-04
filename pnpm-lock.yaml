@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@vitejs/plugin-vue': 2.3.1
   '@vitejs/plugin-vue-jsx': 1.3.10
+  cloc: 2.9.0
   sass: 1.52.2
   typescript: 4.6.3
   vite: 2.9.1
@@ -11,6 +12,7 @@ specifiers:
   vue-tsc: 0.29.8
 
 dependencies:
+  cloc: 2.9.0
   sass: 1.52.2
   vue: 3.2.31
   vue-router: 4.0.15_vue@3.2.31
@@ -704,6 +706,11 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: false
+
+  /cloc/2.9.0:
+    resolution: {integrity: sha512-Eo97MtQ5nozSd5CFcYgwUg5Ej7GVcdopVd5T+SGwJc3VAmu0vNxV/ZDl06QAQhCUkM2EGKl8nhhP1BZuQXGiZg==}
+    hasBin: true
     dev: false
 
   /color-convert/1.9.3:
