@@ -1,12 +1,11 @@
 /*
  * @Author: mengxiangyu
  * @Date: 2022-05-22 17:37:17
- * @LastEditTime: 2022-06-04 15:19:22
+ * @LastEditTime: 2022-06-04 15:26:58
  * @LastEditors: your name
  * @Description:
  */
 
-import { defineComponent } from "vue";
 import s from "./WelcomeLayout.module.scss";
 import pig from "../../assets/icons/pig.svg";
 import { WelcomeLayout } from "./WelcomeLayout";

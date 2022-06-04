@@ -1,7 +1,7 @@
 /*
  * @Author: mengxiangyu
  * @Date: 2022-06-04 14:50:14
- * @LastEditTime: 2022-06-04 14:51:50
+ * @LastEditTime: 2022-06-04 15:26:24
  * @LastEditors: your name
  * @Description:
  */
@@ -13,24 +13,23 @@
  * @LastEditors: your name
  * @Description:
  */
-
-import { defineComponent } from "vue";
+import { FunctionalComponent } from "vue";
 import s from "./WelcomeLayout.module.scss";
 import pig from "../../assets/icons/pig.svg";
 
-export const WelcomeLayout = defineComponent({
-  setup: (props, context) => {
-    const { slots } = context;
-    return () => (
-      <div class={s.wrapper}>
-        <div class={s.card}>
-          {slots.icon?.()}
-          {slots.title?.()}
-        </div>
-        <div class={s.action}>
-          {slots.buttons?.()}
-        </div>
+export const WelcomeLayout: FunctionalComponent = (props, context) => {
+  const {
+    slots: { icon, title, buttons },
+  } = context;
+  return (
+    <div class={s.wrapper}>
+      <div class={s.card}>
+        {icon?.()}
+        {title?.()}
       </div>
-    );
-  },
-});
+      <div class={s.action}>{buttons?.()}</div>
+    </div>
+  );
+};
+
+WelcomeLayout.displayName = "WelcomeLayout";
